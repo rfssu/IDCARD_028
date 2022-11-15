@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>KTP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+            img{
+             box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2); 
+             max-width: 700px; 
+             margin: auto; 
+             text-align: justify; 
+             float: right;
+             display:block;
+             width:200px;
+             clear:both;
+             margin:5px;
+            }
+            fieldset{
+                box-shadow: 5px 6px 8px 5px rgba(0, 0, 0, 1); 
+                max-width: 1000px; 
+                margin: auto; 
+                text-align: justify;
+                background-color:#2BA748
+            }
+        </style>
+    <body>
+        <fieldset><center><h1>KTP</h1></center>
+        <hr/>
+    Nama : <p th:text="${isinama}"></p>
+    Tanggal Lahir : <p th:text="${isitgl}"></p>
+    <img th:src="${isifoto}"></fieldset>
+        
+    </body>
+</html>
